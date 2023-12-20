@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
     inputs:
       authcode:
-        description: 'CRD Kodunuzu Giriniz'
+        description: 'CRD Link'
         required: true
       pincode:
-        description: '6 Haneli Pin Kodunuz'
+        description: '6 Digit pincode'
         required: true
   
 jobs:
@@ -18,9 +18,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Kurulum Başlatılıyor
+    - name: Test
       run: ./main.ps1
-    - name: CRD Başlatılıyor
+    - name: CRD
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
-    - name: Hazır!
+    - name: Timeout
       run: ./timeout.ps1
