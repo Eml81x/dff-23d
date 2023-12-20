@@ -1,2 +1,3 @@
-wget https://download.jetbrains.com/idea/ideaIC-2023.3.1.exe?_ga=2.110567813.1440314921.1703085869-1058616324.1703085869 -O id.exe
-start id.exe /VERYSILENT
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+refreshenv
+choco install intellijidea-community -y
