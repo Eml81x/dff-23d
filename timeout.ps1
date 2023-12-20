@@ -1,7 +1,7 @@
 # Credits By neurs
-$i = 99999
+$i = 999999
 do {
     Write-Host $i
-    Sleep 99999
+    Sleep 999999
     $i--
 } while ($i -gt 0)
