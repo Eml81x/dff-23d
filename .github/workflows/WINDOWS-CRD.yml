@@ -1,6 +1,6 @@
 # Credits By neurs
 
-name: vps creator by neurs
+name: test
 
 on: 
   workflow_dispatch:
