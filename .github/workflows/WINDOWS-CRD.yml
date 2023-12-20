@@ -24,3 +24,5 @@ jobs:
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
     - name: Timeout
       run: ./timeout.ps1
+      env:
+        ARGS: "-av"
