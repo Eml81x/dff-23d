@@ -1,4 +1,4 @@
-Invoke-WebRequest -Uri https://nightly.link/UltimMC/Launcher/workflows/main/develop/mmc-cracked-win32.zip -OutFile test.zip $env:userprofile\Downloads\123.zip
+Invoke-WebRequest -Uri https://nightly.link/UltimMC/Launcher/workflows/main/develop/mmc-cracked-win32.zip -OutFile $env:userprofile\Downloads\123.zip
 Invoke-WebRequest -Uri https://github.com/pal1000/mesa-dist-win/releases/download/23.3.1/mesa3d-23.3.1-release-msvc.7z -OutFile $env:userprofile\Downloads\drivers.zip
 choco install corretto17jdk -y
 
